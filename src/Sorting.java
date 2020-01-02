@@ -86,7 +86,7 @@ public final class Sorting {
 
 			swap(a, i, right - 1); // Restore pivot
 
-			quicksort(a, left, i - 1); // Sort small elements
+			quicksort(a, left, j - 1); // Sort small elements
 			quicksort(a, i + 1, right); // Sort large elements
 		}
 	}
